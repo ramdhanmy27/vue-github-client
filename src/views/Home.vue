@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <InputUsername @input="setUsername" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import InputUsername from '@/components/Home/InputUsername.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    InputUsername,
+  },
+  methods: {
+    setUsername(username) {
+      this.$router.push(username);
+    },
   },
 };
 </script>
