@@ -5,20 +5,17 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
 ### Compiles and minifies for production
 ```
 yarn build
 ```
 
-### Lints and fixes files
+### Run app for production locally
 ```
-yarn lint
+yarn start
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
